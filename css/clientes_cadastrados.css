@@ -1,0 +1,198 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+:root{
+  --cor-primaria: #e8e8f1;
+  --cor-secundaria:#ffffff;
+  --cor-fonte: #000000;
+} 
+
+.dark-theme{
+  --cor-primaria: #49494d;
+  --cor-secundaria:#150e0e;
+  --cor-fonte: #ffffff;
+}
+
+label{
+  color: var(--cor-fonte);
+}
+
+h2{
+  color: var(--cor-fonte);
+}
+
+body {
+  background-color: var(--cor-primaria);
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: 5px 10px;
+  justify-content: space-around;
+  background-color: #1d1d1d;
+}
+
+.img-logo {
+  align-items: flex-start;
+}
+
+ul {
+  margin-top: 40px;
+}
+
+li {
+  display: inline;
+  padding: 10px;
+  margin: auto;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 24px;
+}
+
+li a:hover {
+  color: #1d1d1d;
+  background-color: var(--cor-fonte);
+}
+
+.header h2 {
+  color: #fff;
+}
+
+.social img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 5px;
+  margin-top: 20px;
+}
+
+.img-logo {
+  width: 200px;
+  height: 120px;
+}
+
+#icon {
+  width: 50px;
+  cursor: pointer;
+  padding-left: 50px;
+}
+
+/* FOOTER */
+.rodape {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  color: #fff;
+  background-color: #383838;
+}
+
+.rodape ul {
+  margin: 0px;
+}
+
+.rodape h4 {
+  padding: 9px;
+}
+
+.rodape li {
+  display: block;
+}
+
+.rodape a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.rodape li:hover {
+  color: #1d1d1d;
+  background-color: #fff;
+}
+
+.rodape select {
+  border: none;
+  color: white;
+  background-color: #383838;
+  padding: 10px;
+  width: 170px;
+}
+
+/* MAIN */
+
+main {
+  padding: 20px;
+  width: 80%;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  background-color: var(--cor-secundaria);
+}
+
+.form {
+  margin: 10px;
+  align-items: center;
+}
+
+label {
+  display: block;
+  margin-left: 5px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+div {
+  display: inline-block;
+}
+
+.cliente-info {
+  padding: 10px;
+  margin: auto;
+  color: var(--cor-fonte);
+}
+
+.contato-info {
+  padding: 10px;
+  margin: auto;
+  color: var(--cor-fonte);
+} 
+
+.endereco-info {
+  padding: 10px;
+  margin: auto;
+  color: var(--cor-fonte);
+}
+
+button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: none;
+  border: none;
+  color: white;
+}
+
+#salvar {
+  background-color: #c70039;
+}
+
+#cliente-novo {
+  background-color: #141e46;
+}

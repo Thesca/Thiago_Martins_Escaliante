@@ -1,0 +1,228 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+  
+  body {
+    background-color: rgb(232, 232, 241);
+  }
+  
+  /* HEADER */
+  
+.header {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 5px;
+    justify-content: space-around;
+    background-color: #1d1d1d;
+}
+  
+.img-logo {
+    align-items: flex-start;
+}
+  
+ul {
+    margin-top: 40px;
+}
+  
+li {
+    display: inline;
+    padding: 10px;
+    margin: auto;
+}
+  
+li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 24px;
+}
+  
+li a:hover {
+    color: #1d1d1d;
+    background-color: #fff;
+}
+  
+.header h2 {
+    color: #fff;
+}
+  
+.social img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 5px;
+    margin-top: 20px;
+}
+  
+.img-logo {
+    width: 200px;
+    height: 120px;
+}
+
+.car-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* Estilo de cada carro individual */
+.car {
+    width: calc(30% - 20px); /* Defina o tamanho desejado para cada carro com margem entre eles */
+    margin-bottom: 20px; /* Espaçamento entre carros */
+    padding: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif!important;
+}  
+  
+  /* Estilo da imagem do carro */
+.car img {
+    width: 100%; /* Imagem ocupando toda a largura do bloco do carro */
+    height: 250px; /* Altura ajustável automaticamente para manter a proporção */
+}
+
+.car-name {
+    font-weight: bold;
+}
+
+.car-price {
+    color: #cc0000; /* Cor do preço */
+    font-weight: bold;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons button {
+    width: 450px;
+    height: 45px;
+    text-align: center;
+    align-items: flex-end;
+    background-color: #7b7878;
+    color: white; /* Cor do texto */
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-right: 10px; /* Espaço entre os botões */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.buttons button:hover {
+    background-color: #e1a72c; /* Amarelo queimado mais claro no hover */
+}
+
+/* Estilo para remover a margem direita do último botão */
+.buttons button:last-child {
+    margin-right: 0;
+}
+
+.search-vehicles {
+    margin-left: 50px; /* Adicione margem à esquerda para alinhar para a direita */
+    
+}
+
+.search-options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* Alinhar elementos verticalmente */
+    justify-content: center;
+}
+
+/* Estilo para os elementos select dentro das labels */
+.search-options label select {
+    width: 410px; /* Largura desejada para os elementos select */
+    margin-right: 10px; /* Espaçamento entre elementos */
+    height: 30px;
+}
+
+.search-options button {
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    align-self: flex-end;
+    background-color: #e1a72c; /* Amarelo queimado */
+    color: #494848; /* Cor do texto */
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.search-options label span {
+    font-weight: bold; /* Texto em negrito */
+    display: block; /* Coloca o texto do rótulo em uma linha separada */
+}
+
+/* Estilo para a seção de localização */
+.location {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo para o título da localização */
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif!important;
+}
+
+/* Estilo para a imagem de localização */
+.location-image img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    text-align: center;
+
+}
+
+p{
+    margin-right: 50px;
+    font-size: 20.4px;
+    margin-bottom: 30px;
+}
+  
+  /* FOOTER */
+.rodape {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    color: #fff;
+    background-color: #383838;
+}
+  
+.rodape ul {
+    margin: 0px;
+}
+  
+.rodape h4 {
+    padding: 9px;
+}
+  
+.rodape li {
+    display: block;
+}
+  
+.rodape a {
+    text-decoration: none;
+    color: #fff;
+}
+  
+.rodape li:hover {
+    color: #1d1d1d;
+    background-color: #fff;
+}
+  
+.rodape select {
+    border: none;
+    color: white;
+    background-color: #383838;
+    padding: 10px;
+    width: 170px;
+}
