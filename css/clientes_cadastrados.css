@@ -12,7 +12,7 @@
 
 .tema-escuro{
   --cor-primaria: #49494d;
-  --cor-secundaria:#150e0e;
+  --cor-secundaria:#1a1616;
   --cor-fonte: #ffffff;
 }
 
@@ -62,7 +62,7 @@ li a {
 
 li a:hover {
   color: #1d1d1d;
-  background-color: var(--cor-fonte);
+  background-color: #ffffff;
 }
 
 .header h2 {

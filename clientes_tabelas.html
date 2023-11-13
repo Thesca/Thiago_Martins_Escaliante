@@ -23,6 +23,7 @@
           <a href="#"><img src="./assets/facebook.png" alt="Facebook" /></a>
           <a href="#"><img src="./assets/instagram.png" alt="Instagram" /></a>
           <a href="#"><img src="./assets/image.png" alt="" /></a>
+          <img src="./assets/moon.png" id="icon">
         </div>
       </div>
     </header>
@@ -79,7 +80,7 @@
             </tbody>
             <tfoot>
               <td colspan="6">
-                <input type="submit" value="Anterior" />
+                <input type="submit" value="Anterior"/>
                 <select>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -176,4 +177,15 @@
       </div>
     </footer>
   </body>
+  <script>
+    var icon = document.getElementById("icon");
+    icon.onclick = function(){
+      document.body.classList.toggle("tema-escuro");
+      if(document.body.classList.contains("tema-escuro")){
+        icon.src = "./assets/sun.png";
+      } else {
+        icon.src = "./assets/moon.png"
+      }
+    }
+  </script>
 </html>

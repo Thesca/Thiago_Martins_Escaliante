@@ -3,9 +3,18 @@
     margin: 0px;
     padding: 0px;
 }
-  
+:root{
+    --cor-primaria:#e8e8f1;
+    --cor-fonte:#000000;
+}
+
+.tema-escuro{
+    --cor-primaria: #1a1616;
+    --cor-fonte: #ffffff;
+}
+
   body {
-    background-color: rgb(232, 232, 241);
+    background-color: var(--cor-primaria);
   }
   
   /* HEADER */
@@ -62,6 +71,12 @@ li a:hover {
     height: 120px;
 }
 
+#icon {
+    width: 50px;
+    cursor: pointer;
+    padding-left: 50px;
+  }
+
 .car-list {
     display: flex;
     justify-content: space-between;
@@ -86,6 +101,7 @@ li a:hover {
 
 .car-name {
     font-weight: bold;
+    color: var(--cor-fonte);
 }
 
 .car-price {
@@ -125,7 +141,9 @@ li a:hover {
 
 .search-vehicles {
     margin-left: 50px; /* Adicione margem à esquerda para alinhar para a direita */
-    
+}
+i{
+    color: var(--cor-fonte);
 }
 
 .search-options {
@@ -158,6 +176,7 @@ li a:hover {
 .search-options label span {
     font-weight: bold; /* Texto em negrito */
     display: block; /* Coloca o texto do rótulo em uma linha separada */
+    color: var(--cor-fonte);
 }
 
 /* Estilo para a seção de localização */
@@ -168,6 +187,7 @@ li a:hover {
 
 /* Estilo para o título da localização */
 h2 {
+    color: var(--cor-fonte);
     font-size: 24px;
     margin-bottom: 10px;
     margin-left: 30px;
@@ -183,6 +203,7 @@ h2 {
 }
 
 p{
+    color: var(--cor-fonte);
     margin-right: 50px;
     font-size: 20.4px;
     margin-bottom: 30px;
