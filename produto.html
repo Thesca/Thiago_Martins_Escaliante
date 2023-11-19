@@ -32,32 +32,27 @@
             <div class="car">
                 <a href="#"><img src="img/carro 1.png" alt="Carro 1"></a>
                 <p class="car-name">Chevrolet Cruze</p>
-                <p class="car-price">R$ 50.000,00</p>
             </div>
             <div class="car">
                 <a href="#"><img src="img/carro 2.png" alt="Carro 2"></a>
                 <p class="car-name">Chevrolet Onix</p>
-                <p class="car-price">R$ 40.000,00</p>
             </div>
             <div class="car">
                 <a href="#"><img src="img/carro 3.png" alt="Carro 3"></a>
                 <p class="car-name">Chevrolet Camaro</p>
-                <p class="car-price">R$ 300.000,00</p>
             </div>
             <div class="car">
                 <a href="#"><img src="img/carro 4.png" alt="Carro 4"></a>
                 <p class="car-name">Jeep Compass</p>
-                <p class="car-price">R$ 150.000,00</p>
+                
             </div>
             <div class="car">
                 <a href="#"><img src="img/carro 5.png" alt="Carro 5"></a>
                 <p class="car-name">Range Rover Evoque</p>
-                <p class="car-price">R$ 280.950,00</p>
             </div>
             <div class="car">
                 <a href="#"><img src="img/carro 6.png" alt="Carro 6"></a>
                 <p class="car-name">Bmw X3</p>
-                <p class="car-price">R$ 450.950,00</p>
             </div>
         </section>
         <section class="buttons">
@@ -217,5 +212,14 @@
         icon.src = "./assets/moon.png"
       }
     }
+    count = 0;
+    const carPrices = ["R$ 50.000.00", "R$ 40.000,00", "R$ 300.000,00", "R$ 150.000,00", "R$ 280.950,00", "R$ 450.950,00"]
+    document.querySelectorAll(".car").forEach((ele)=>{
+      var p = document.createElement("p");
+      p.setAttribute("class", "car-price");
+      p.innerText = carPrices[count];
+      ele.appendChild(p);
+      count++;
+    });
   </script>
 </html>
